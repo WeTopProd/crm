@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px 20px;
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.header_link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    
+}
+.header_link_text{
+    padding: 20px;
+    font-weight: 700;
+}
+.headerButton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.headerButton_icon{
+    height: 54px;
+    width: 64px;
+    padding: 15px;
+    color: #FFFFFF;
+    font-weight: 900;
+}

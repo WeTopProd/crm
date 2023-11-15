@@ -1,0 +1,66 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    &_input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        &_div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 153px;
+            height: 43px;
+            padding: 5px 10px 5px 10px ;
+            border-radius: 50px ;
+            gap: 10px;
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+        &_big{
+            position: relative;
+            &_input{
+                width: 510px;
+                height: 64px;
+                box-shadow: 0px 10px 20px 0px #00000026 inset, -5px -5px 10px 0px #FFFFFF0D inset;
+                background-color: #262E36;
+                border-radius: 50px;
+                border: none;
+                padding: 10px;
+                margin: 10px 0;
+                color: #FFFFFF;
+                padding: 10px 10px 10px 55px;
+            }
+            &_icon{
+            position: absolute;
+            top: 29px;
+            left: 20px;
+            }
+        }
+    }
+    &_button{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        &_div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 217px;
+            height:44px;
+            padding: 10px, 40px, 10px, 40px;
+            border-radius: 50px;
+            background-color: #232B33;
+            border: none;
+            color: #FFFFFF;
+            font-weight: 700;
+            box-shadow: 0px 10px 20px 0px #00000026, -5px -5px 10px 0px #FFFFFF0D;
+            gap: 10px;
+        }
+    }
+}

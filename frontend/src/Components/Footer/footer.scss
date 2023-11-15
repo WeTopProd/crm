@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    padding: 10px 15px;
+    &_right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        &_text{
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+        }
+    }
+}
