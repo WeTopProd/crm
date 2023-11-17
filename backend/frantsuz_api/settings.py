@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'drf_yasg',
     'phonenumber_field',
     'users.apps.UsersConfig',
-    'disciplines.apps.DisciplinesConfig',
 ]
 
 MIDDLEWARE = [
