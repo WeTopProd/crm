@@ -6,23 +6,43 @@
     gap: 30px;
     &_input{
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         gap: 20px;
         &_div{
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 153px;
-            height: 43px;
-            padding: 5px 10px 5px 10px ;
-            border-radius: 50px ;
-            gap: 10px;
             color: #FFFFFF;
             font-weight: 700;
+            position: relative;
+            top: -7px;
+            &_button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                padding: 0 45px;
+                height: 50px;
+                background-color: #232B33;
+                border-radius: 50px;
+                border: none;
+                color: #FFFFFF;
+                font-weight: 700;
+                transition: transform 0.5s ease;
+                transition: box-shadow 0.5s ease;
+                transform-origin: center center;
+                box-shadow: 0px 10px 20px 0px #00000026, -5px -5px 10px 0px #FFFFFF0D;
+            }
+            
+            &_button:hover {
+                box-shadow: 0px 10px 20px 0px #00000026, -5px -5px 10px 0px #FFFFFF0D;
+            }
         }
         &_big{
             position: relative;
+            padding-bottom: 20px;
             &_input{
                 width: 510px;
                 height: 64px;
@@ -31,14 +51,14 @@
                 border-radius: 50px;
                 border: none;
                 padding: 10px;
-                margin: 10px 0;
                 color: #FFFFFF;
-                padding: 10px 10px 10px 55px;
+                padding: 10px 10px 10px 65px;
+                
             }
             &_icon{
             position: absolute;
-            top: 29px;
-            left: 20px;
+            top: 20px;
+            left: 24px;
             }
         }
     }

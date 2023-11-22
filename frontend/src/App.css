@@ -5,8 +5,8 @@
 }
 html,body{
   background-color: #232B33;
-  width: 100%; /* Задает ширину в 100% */
-  height: 100%; /* Задает высоту в 100% */
+  width: 100%; 
+  height: 100%; 
   
   
 }
@@ -16,16 +16,18 @@ html,body{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  min-height: 97vh;
   /* margin-left: calc(50% - 50vw); */
 }
 .App_body{
-  width: 100%;
+  max-width: 100vw;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
 .disabled {
     pointer-events: none;

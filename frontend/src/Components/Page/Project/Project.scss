@@ -1,0 +1,33 @@
+.project_body{
+    display: grid;
+    grid-template-columns: repeat(2,700px);
+    color: rgb(205 205 205);
+    gap: 50px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.project{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, 0.1019607843), 10px 4px 20px 0px rgba(0, 0, 0, 0.5019607843);
+    border-radius: 20px;
+    padding: 10px;
+    min-height: 180px;
+    gap: 75px;
+    padding: 20px 40px;
+    &_photo{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    &_info{
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}

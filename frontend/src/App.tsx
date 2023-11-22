@@ -1,26 +1,28 @@
-import React, { useState }  from 'react';
-import { BrowserRouter ,Route, Routes } from 'react-router-dom';
-import './App.css';
-
+import React, { useState } from "react";
+import { BrowserRouter, Route, Routes, } from "react-router-dom";
+import { Provider } from "react-redux";
+import "./App.css";
+import "./Components/Page/Main.scss";
 // Components
-import Header from './Components/Header/Header';
-import LogIn from './Components/Body/LogInAdmin/LogIn';
-import Footer from './Components/Footer/Footer';
-import Exit from './Components/ModalWindow/Exit'
-import Main from './Components/Body/MainPage/Main';
-function App () {
-
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
-
-  
+import Header from "./Components/Header/Header";
+import LogIn from "./Components/LogInAdmin/LogIn";
+import Footer from "./Components/Footer/Footer";
+import Exit from "./Components/ModalWindow/Exit";
+import Main from "./Components/Page/Main";
+import {Client} from "./Components/Page/Clients/Client";
+import {store} from './Redux/Store'
+import { Project } from "./Components/Page/Project/Project";
+import {Proposals} from "./Components/Page/Proposals";
+function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   return (
-    <div className="App" id='App'>
-  
+    <div className="App" id="App">
       <BrowserRouter>
+        <Provider store={store}>
         {!isAuthenticated === false ? (
           <>
-            <div className='disabled'>
+            <div className="disabled">
               <Header />
             </div>
             <div className="App_body">
@@ -29,7 +31,7 @@ function App () {
                 <Route path="/exite" element={<Exit />} />
               </Routes>
             </div>
-            <div className='disabled'>
+            <div className="disabled">
               <Footer />
             </div>
           </>
@@ -37,14 +39,19 @@ function App () {
           <>
             <Header />
             <div className="App_body">
+              <Main />
               <Routes>
-                <Route path="/" element={<Main />}/>
-                <Route path="/exite" element={<Exit />}/>
+                
+                <Route path="/exite" element={<Exit />} />
+                <Route path="/clients" element={<Client />} />
+                <Route path="/projects" element={<Project />} />
+                <Route path="/proposals" element={<Proposals />} />
               </Routes>
             </div>
             <Footer />
           </>
         )}
+        </Provider>
       </BrowserRouter>
     </div>
   );

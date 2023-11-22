@@ -1,0 +1,53 @@
+.client{
+    display: grid;
+    grid-template-columns: repeat(2,700px);
+    color: rgb(205 205 205);
+    gap: 50px;
+    padding: 20px;
+    margin-top: 20px;
+    &_blocks{
+        display: flex;
+        flex-direction: column;
+        box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, 0.1019607843), 10px 4px 20px 0px rgba(0, 0, 0, 0.5019607843);
+        border-radius: 20px;
+        min-width: 680px;
+        min-height: 135px;
+        padding: 12px;
+        &_blocksFirst{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #bcbcbc;
+            gap: 10px;
+            
+            &_info{
+                margin: 10px 0;
+            }
+        }
+        &_blocksSecond{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            
+            &_info {
+                    margin: 10px 0;
+                }
+        }
+        &_titel{
+            display: flex;
+            
+            align-items: start;
+            padding: 10px 0;
+            &_img {
+                min-width: 75px;
+                min-height: 75px;
+                position: relative;
+                bottom:19px;
+                
+
+            }
+            }
+        }
+        
+}
